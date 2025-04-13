@@ -1,0 +1,18 @@
+### Petición GET al root
+GET http://localhost:1234/
+
+### Información de la api
+GET http://localhost:5555/api/info
+
+### Solicitar canción
+POST  http://localhost:5555/api/song/request
+Content-Type: application/json
+
+{
+  "user": "alejandro",
+  "song": "bicep",
+  "artist": "trst"
+}
+
+### Solicitar todas las canciones
+GET  http://localhost:5555/api/song/getall
